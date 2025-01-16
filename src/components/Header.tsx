@@ -9,7 +9,7 @@ export default async function Header() {
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <p className="text-xl font-bold">
-              <Link href={'/'}>Invoicipedia</Link>
+              <Link href={'/'}>Hero Images Showcase</Link>
             </p>
           </div>
         </div>
