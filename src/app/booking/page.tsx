@@ -11,7 +11,7 @@ export default function Home() {
           src="/images/booking.webp"
           alt="booking"
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1920px"
+          sizes="(max-width: 320px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1920px"
           style={{ objectFit: 'cover' }}
           priority
           fetchPriority="high"
