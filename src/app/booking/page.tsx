@@ -6,7 +6,7 @@ import SSRComponent from '../_components/ssr-component';
 export default function Home() {
   return (
     <main className="mx-auto flex h-auto w-full flex-col gap-6 text-center">
-      <div className="relative h-full max-h-[300px] w-full lg:max-h-[400px]">
+      <div className="relative h-[300px] w-full lg:h-[400px]">
         <Image
           src="/images/booking.webp"
           alt="booking"
