@@ -20,7 +20,7 @@ function NewsCard({ coverImage, title }: TAny) {
   return (
     <Link
       href={`/`}
-      className="bg-primary-foreground col-span-1 flex w-full flex-col items-center rounded-lg"
+      className="col-span-1 flex w-full flex-col items-center rounded-lg bg-primary-foreground"
     >
       <div className="relative h-[240px] w-full">
         <Image
@@ -73,10 +73,10 @@ function LatestNewsSection() {
   return (
     <div className="xl:px-common-horizontal my-10 flex flex-col items-center gap-4 px-6 py-10 lg:px-16">
       <div className="flex flex-col items-center">
-        <h1 className="text-primary text-lg font-semibold tracking-tight lg:text-[32px]">
+        <h1 className="text-lg font-semibold tracking-tight text-primary lg:text-[32px]">
           {'SECTIONS.NEWS'}
         </h1>
-        <p className="text-muted-foreground text-sm lg:text-lg">
+        <p className="text-sm text-muted-foreground lg:text-lg">
           {'SECTIONS.NEWS_DESCRIPTION'}
         </p>
       </div>
@@ -104,9 +104,9 @@ function LatestNewsSection() {
               onClick={() => handleDotButtonClick(index)}
             >
               {index === activeIndex ? (
-                <div className="bg-primary h-[10px] w-[10px] rounded-full" />
+                <div className="h-[10px] w-[10px] rounded-full bg-primary" />
               ) : (
-                <div className="bg-muted-foreground h-2 w-2 rounded-full" />
+                <div className="h-2 w-2 rounded-full bg-muted-foreground" />
               )}
             </Button>
           ),

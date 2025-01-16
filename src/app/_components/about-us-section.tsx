@@ -10,10 +10,10 @@ function AboutUsSection() {
   return (
     <div className="xl:px-common-horizontal mt-4 flex flex-col items-center gap-4 px-6 lg:my-10 lg:px-16">
       <div className="mb-6 text-center">
-        <h1 className="text-primary text-lg font-semibold tracking-tight lg:text-[32px]">
+        <h1 className="text-lg font-semibold tracking-tight text-primary lg:text-[32px]">
           {'SECTIONS.ABOUT_US_TITLE'}
         </h1>
-        <p className="text-muted-foreground font-normal lg:text-lg lg:font-semibold">
+        <p className="font-normal text-muted-foreground lg:text-lg lg:font-semibold">
           {'SECTIONS.ABOUT_US_SUB_TITLE'}
         </p>
       </div>
