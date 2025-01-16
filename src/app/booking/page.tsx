@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import JSComponent from '../_components/js-component';
+import { HomePageSections } from '../_components/sections';
 import SSRComponent from '../_components/ssr-component';
 
 export default function Home() {
@@ -10,14 +11,15 @@ export default function Home() {
         <Image
           src="/images/booking.webp"
           alt="booking"
+          sizes="100vw"
           fill
-          sizes="(max-width: 320px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1920px"
-          style={{ objectFit: 'cover' }}
+          className="-z-1 object-cover"
           priority
           fetchPriority="high"
           loading="eager"
         />
       </div>
+      <HomePageSections />
       <SSRComponent />
       <JSComponent />
     </main>
